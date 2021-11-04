@@ -1,4 +1,5 @@
-#pragma once
+#ifndef APPLICATION_H_
+#define APPLICATION_H_
 
 namespace spic
 {
@@ -17,3 +18,4 @@ namespace spic
 
 	Application* CreateApplication();
 }
+#endif // APPLICATION_H_
