@@ -1,0 +1,8 @@
+//
+// Created by david on 05-11-21.
+//
+
+#ifndef SPIC_PRJ_API_CROSSCOMPILE_H
+#define SPIC_PRJ_API_CROSSCOMPILE_H
+
+#endif //SPIC_PRJ_API_CROSSCOMPILE_H
