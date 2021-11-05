@@ -1,7 +1,7 @@
 #ifndef ENTRYPOINT_H_
 #define ENTRYPOINT_H_
 
-extern spic::Application* spic::CreateApplication();
+#include "Application.hpp"
 
 int main(int argc, char** argv)
 {
