@@ -3,6 +3,7 @@
 
 #include "Component.hpp"
 #include "Vector2.hpp"
+#include "RigidBody_extra_includes.hpp"
 
 namespace spic {
 

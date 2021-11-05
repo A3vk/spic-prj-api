@@ -3,6 +3,7 @@
 
 #include "Color.hpp"
 #include "Vector2.hpp"
+#include "Particle_extra_includes.hpp"
 
 namespace spic {
 	struct Particle {

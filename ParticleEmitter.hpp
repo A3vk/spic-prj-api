@@ -3,6 +3,7 @@
 
 #include "Component.hpp"
 #include "Particle.hpp"
+#include "ParticleEmitter_extra_includes.hpp"
 
 namespace spic {
 	class ParticleEmitter : public Component {

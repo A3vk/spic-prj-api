@@ -1,6 +1,8 @@
 #ifndef COMPONENT_H_
 #define COMPONENT_H_
 
+#include "Component_extra_includes.hpp"
+
 namespace spic {
 
     /**

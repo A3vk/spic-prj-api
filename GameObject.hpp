@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include "GameObject_extra_includes.hpp"
 
 namespace spic {
 

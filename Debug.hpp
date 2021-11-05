@@ -4,6 +4,7 @@
 #include "Point.hpp"
 #include "Color.hpp"
 #include <string>
+#include "Debug_extra_includes.hpp"
 
 namespace spic {
 

@@ -2,6 +2,7 @@
 #define BOXCOLLIDER_H_
 
 #include "Collider.hpp"
+#include "BoxCollider_extra_includes.hpp"
 
 namespace spic {
 

@@ -5,6 +5,7 @@
 #include "Vector2.hpp"
 #include "Input.hpp"
 #include "Collider.hpp"
+#include "Events_extra_includes.hpp"
 
 namespace spic {
 	namespace Events {

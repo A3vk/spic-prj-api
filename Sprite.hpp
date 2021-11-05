@@ -4,6 +4,7 @@
 #include "Component.hpp"
 #include "Color.hpp"
 #include <string>
+#include "Sprite_extra_includes.hpp"
 
 namespace spic {
 

@@ -3,6 +3,7 @@
 
 #include "Component.hpp"
 #include "Events.hpp"
+#include "BehaviourScript_extra_includes.hpp"
 
 namespace spic {
 
