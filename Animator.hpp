@@ -4,6 +4,7 @@
 #include "Component.hpp"
 #include "Sprite.hpp"
 #include "SpriteSheet.hpp"
+#include "Animator_extra_includes.hpp"
 
 namespace spic {
 

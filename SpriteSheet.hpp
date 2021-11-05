@@ -4,6 +4,7 @@
 #include <vector>
 #include <memory>
 #include "Vector2.hpp"
+#include "SpriteSheet_extra_includes.hpp"
 
 namespace spic {
 	class SpriteSheet {

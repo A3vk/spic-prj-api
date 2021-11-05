@@ -4,6 +4,7 @@
 #include "GameObject.hpp"
 #include "Color.hpp"
 #include "Scene.hpp"
+#include "Camera_extra_includes.hpp"
 
 namespace spic {
 

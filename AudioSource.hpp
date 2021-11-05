@@ -3,6 +3,7 @@
 
 #include "Component.hpp"
 #include <string>
+#include "AudioSource_extra_includes.hpp"
 
 namespace spic {
 

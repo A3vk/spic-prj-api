@@ -3,6 +3,7 @@
 
 #include "Vector2.hpp"
 #include <string>
+#include "Input_extra_includes.hpp"
 
 namespace spic {
 

@@ -2,6 +2,7 @@
 #define SCENE_H_
 
 #include "GameObject.hpp"
+#include "Scene_extra_includes.hpp"
 
 namespace spic {
 

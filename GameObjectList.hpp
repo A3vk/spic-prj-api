@@ -6,6 +6,7 @@
 #include <string>
 #include "Camera.hpp"
 #include "GameObject.hpp"
+#include "GameObjectList_extra_includes.hpp"
 
 namespace spic {
 	class GameObjectList {

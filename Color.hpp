@@ -1,6 +1,8 @@
 #ifndef COLOR_H_
 #define COLOR_H_
 
+#include "Color_extra_includes.hpp"
+
 namespace spic {
 
     /**

@@ -4,6 +4,7 @@
 #include <memory>
 #include "Scene.hpp"
 #include <string>
+#include "SceneManager_extra_includes.hpp"
 
 namespace spic {
 	class SceneManager {

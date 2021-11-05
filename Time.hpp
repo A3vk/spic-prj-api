@@ -1,6 +1,8 @@
 #ifndef TIME_H_
 #define TIME_H_
 
+#include "Time_extra_includes.hpp"
+
 namespace spic {
 
     namespace Time {

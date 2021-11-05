@@ -2,6 +2,7 @@
 #define TRANSFORM_H_
 
 #include "Vector2.hpp"
+#include "Transform_extra_includes.hpp"
 
 namespace spic {
     /**

@@ -1,6 +1,7 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#include "Application_extra_includes.hpp"
 #include "CrossCompile.h"
 
 namespace spic
