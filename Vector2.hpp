@@ -11,6 +11,10 @@ namespace spic {
         T x;
         T y;
 
+        Vector2<T> operator+ (Vector2<T> const& obj);
+        Vector2<T> operator- (Vector2<T> const& obj);
+        T operator* (Vector2<T> const& obj);
+
         static const Vector2& Up();
         static const Vector2& Right();
         static const Vector2& Down();
