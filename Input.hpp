@@ -1,8 +1,9 @@
 #ifndef INPUT_H_
 #define INPUT_H_
 
-#include "Point.hpp"
+#include "Vector2.hpp"
 #include <string>
+#include "Input_extra_includes.hpp"
 
 namespace spic {
 
@@ -280,12 +281,7 @@ namespace spic {
         /**
          * @brief The current mouse position in pixel coordinates. (Read Only)
          */
-        const Point MousePosition();
-
-        /**
-         * @brief Returns the value of the virtual axis identified by axisName.
-         */
-        double GetAxis();
+        const Vector2 MousePosition();
 
         /**
          * @brief Returns true while the user holds down the key identified by keycode.

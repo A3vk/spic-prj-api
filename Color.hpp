@@ -1,6 +1,8 @@
 #ifndef COLOR_H_
 #define COLOR_H_
 
+#include "Color_extra_includes.hpp"
+
 namespace spic {
 
     /**
@@ -67,20 +69,7 @@ namespace spic {
             // ... more standard colors here
 
         private:
-            double r;
-            double g;
-            double b;
-            double a;
-
-            static Color _white;
-            static Color _red;
-            static Color _green;
-            static Color _blue;
-            static Color _cyan;
-            static Color _magenta;
-            static Color _yellow;
-            static Color _black;
-            // ... more standard color here
+        #include "Color_private.hpp"
     };
 
 }

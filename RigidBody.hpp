@@ -2,7 +2,8 @@
 #define RIGIDBODY_H_
 
 #include "Component.hpp"
-#include "Point.hpp"
+#include "Vector2.hpp"
+#include "RigidBody_extra_includes.hpp"
 
 namespace spic {
 
@@ -20,17 +21,29 @@ namespace spic {
      */
     class RigidBody : public Component {
         public:
+
+            RigidBody(double mass, double gravityScale, BodyType bodyType);
             /**
              * @brief Apply force to this rigid body.
              * @param forceDirection A point, used as a vector to indicate direction
              *        and magnitude of the force to be applied.
              */
-            void AddForce(const Point& forceDirection);
+            void AddForce(const Vector2& forceDirection);
+
+            double GetMass();
+
+            void SetMass(double newMass);
+
+            double GetGravityScale();
+
+            void SetGravityScale(double newScale);
+
+            BodyType GetBodyType();
+
+            void SetBodyType(BodyType newBodyType);
 
         private:
-            double mass;
-            double gravityScale;
-            BodyType bodyType;
+        #include "RigidBody_private.hpp"
     };
 
 }

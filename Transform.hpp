@@ -1,16 +1,19 @@
 #ifndef TRANSFORM_H_
 #define TRANSFORM_H_
 
-#include "Point.hpp"
+#include "Vector2.hpp"
+#include "Transform_extra_includes.hpp"
 
 namespace spic {
     /**
      * @brief Instances of this class represent specific 2D transformations.
      */
-    struct Transform {
-        Point position; // Translation (shift)
-        double rotation; // Rotation, in radians
-        double scale; // Multiplication factor
+    class Transform {
+    public:
+        Transform(const Vector2& pos, double rot, double scale);
+        void LookAt(const Vector2& pos);
+    private:
+    #include "Transform_private.hpp"
     };
 }
 

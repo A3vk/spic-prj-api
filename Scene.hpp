@@ -2,6 +2,7 @@
 #define SCENE_H_
 
 #include "GameObject.hpp"
+#include "Scene_extra_includes.hpp"
 
 namespace spic {
 
@@ -10,15 +11,48 @@ namespace spic {
      */
     class Scene {
         public:
+
+            Scene();
             /**
-             * @brief This function is called by a Camera to render the scene on the engine.
+             * @brief This method is called by a Camera to render the scene on the engine.
              */
             void RenderScene();
 
             /**
-             * @brief This property contains all the Game Object that are contained in this scene.
+             * @brief This method is called when creating the scene, should be overridden
              */
-            std::vector<std::shared_ptr<GameObject>> contents;
+            virtual void OnCreate() = 0;
+            /**
+             * @brief This method is called when destroying the scene, should be overridden
+             */
+            virtual void OnDestroy() = 0;
+            /**
+             * @brief This method is called when loading the scene, should be overridden
+             */
+            virtual void OnLoad() = 0;
+            /**
+             * @brief This method is called when unloading the scene, should be overridden
+             */
+            virtual void OnUnload() = 0;
+            /**
+             * @brief This method is called when activating the scene, should be overridden
+             */
+            virtual void OnActivate() = 0;
+            /**
+             * @brief This method is called when deactivating the scene, should be overridden
+             */
+            virtual void OnDeactivate() = 0;
+            /**
+             * @brief This method is called when the scene needs to be updated
+             */
+            virtual void Update() = 0;
+            
+
+        private:
+        #include "Scene_private.hpp"
+
+        protected:
+        #include "Scene_protected.hpp"
     };
 
 }

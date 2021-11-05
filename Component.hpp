@@ -1,6 +1,8 @@
 #ifndef COMPONENT_H_
 #define COMPONENT_H_
 
+#include "Component_extra_includes.hpp"
+
 namespace spic {
 
     /**
@@ -8,6 +10,8 @@ namespace spic {
      */
     class Component {
         public:
+
+            Component();
             /**
              * @brief Getter for active status.
              * @return true if active, false otherwise.
@@ -20,10 +24,7 @@ namespace spic {
             void Active(bool flag) { active = flag; }
 
         private:
-            /**
-             * @brief Active status.
-             */
-            bool active;
+        #include "Component_private.hpp"
     };
 
 }

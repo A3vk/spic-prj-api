@@ -3,6 +3,8 @@
 
 #include "Component.hpp"
 #include "Sprite.hpp"
+#include "SpriteSheet.hpp"
+#include "Animator_extra_includes.hpp"
 
 namespace spic {
 
@@ -11,6 +13,8 @@ namespace spic {
      */
     class Animator : public Component {
         public:
+
+            Animator(SpriteSheet sheet, int fps);
             /**
              * @brief Start playing the image sequence.
              * @param looping If true, will automatically start again when done.
@@ -23,14 +27,13 @@ namespace spic {
              */
             void Stop();
 
-        private:
-            /**
-             * @brief frames per second (playing speed)
-             */
-            int fps;
-            // ... collection of Sprites here
-    };
+            int GetFps();
 
+            void SetFps(int newFps);
+
+        private:
+        #include "Animator_private.hpp"
+    };
 }
 
 #endif // ANIMATOR_H_
