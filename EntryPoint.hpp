@@ -3,7 +3,7 @@
 
 #include "Application.hpp"
 
-int main(int argc, char** argv)
+int main(int, char**)
 {
 	auto app = spic::CreateApplication();
 	app->Run();
