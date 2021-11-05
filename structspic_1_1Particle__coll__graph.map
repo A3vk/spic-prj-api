@@ -1,0 +1,5 @@
+<map id="spic::Particle" name="spic::Particle">
+<area shape="rect" id="node1" title=" " alt="" coords="85,109,181,136"/>
+<area shape="rect" id="node2" href="$structspic_1_1Vector2.html" title="Struct representing both a 2D point and a 2D vector." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node3" href="$classspic_1_1Color.html" title="Color represents a red&#45;green&#45;blue color with alpha." alt="" coords="157,5,239,32"/>
+</map>

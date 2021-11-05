@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['height_147',['Height',['../classspic_1_1BoxCollider.html#aa0ee9fe58bec5a47947ac0d551660444',1,'spic::BoxCollider::Height() const'],['../classspic_1_1BoxCollider.html#a64ae756636a8c9b4a8e86ceca40f55c9',1,'spic::BoxCollider::Height(double newHeight)']]]
+  ['isactiveinworld_169',['IsActiveInWorld',['../classspic_1_1GameObject.html#a155cb2e2f87e48dc762d2c47c00ec197',1,'spic::GameObject']]],
+  ['isactiveself_170',['IsActiveSelf',['../classspic_1_1GameObject.html#aa09610b99a84be4b7c348f56f59da638',1,'spic::GameObject']]]
 ];

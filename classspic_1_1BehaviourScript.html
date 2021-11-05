@@ -90,24 +90,40 @@ Collaboration diagram for spic::BehaviourScript:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a15da06506b3f3bb746f2515f29f08b77"><td class="memItemLeft" align="right" valign="top"><a id="a15da06506b3f3bb746f2515f29f08b77"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">OnStart</a> ()</td></tr>
-<tr class="memdesc:a15da06506b3f3bb746f2515f29f08b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO. <br /></td></tr>
+<tr class="memdesc:a15da06506b3f3bb746f2515f29f08b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when creating the script. <br /></td></tr>
 <tr class="separator:a15da06506b3f3bb746f2515f29f08b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e2d489237a308ace55b84ab9e575972"><td class="memItemLeft" align="right" valign="top"><a id="a6e2d489237a308ace55b84ab9e575972"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972">OnUpdate</a> ()</td></tr>
-<tr class="memdesc:a6e2d489237a308ace55b84ab9e575972"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO. <br /></td></tr>
+<tr class="memdesc:a6e2d489237a308ace55b84ab9e575972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called each frame. <br /></td></tr>
 <tr class="separator:a6e2d489237a308ace55b84ab9e575972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e69d42ef79061b081b09f8916eb7261"><td class="memItemLeft" align="right" valign="top"><a id="a0e69d42ef79061b081b09f8916eb7261"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">OnTriggerEnter2D</a> (const <a class="el" href="classspic_1_1Collider.html">Collider</a> &amp;collider)</td></tr>
-<tr class="memdesc:a0e69d42ef79061b081b09f8916eb7261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when another object enters a trigger collider attached to this object (2D physics only). <br /></td></tr>
-<tr class="separator:a0e69d42ef79061b081b09f8916eb7261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9fb1667b4ecd97ea48d08fc58894a4"><td class="memItemLeft" align="right" valign="top"><a id="ada9fb1667b4ecd97ea48d08fc58894a4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#ada9fb1667b4ecd97ea48d08fc58894a4">OnTriggerExit2D</a> (const <a class="el" href="classspic_1_1Collider.html">Collider</a> &amp;collider)</td></tr>
-<tr class="memdesc:ada9fb1667b4ecd97ea48d08fc58894a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when another object leaves a trigger collider attached to this object (2D physics only). <br /></td></tr>
-<tr class="separator:ada9fb1667b4ecd97ea48d08fc58894a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3571c167cb291be45c8f760a4804b0c6"><td class="memItemLeft" align="right" valign="top"><a id="a3571c167cb291be45c8f760a4804b0c6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">OnTriggerStay2D</a> (const <a class="el" href="classspic_1_1Collider.html">Collider</a> &amp;collider)</td></tr>
-<tr class="memdesc:a3571c167cb291be45c8f760a4804b0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent each frame where another object is within a trigger collider attached to this object (2D physics only). <br /></td></tr>
-<tr class="separator:a3571c167cb291be45c8f760a4804b0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56238cd7b2c7e680a9066d73c353a42"><td class="memItemLeft" align="right" valign="top"><a id="ad56238cd7b2c7e680a9066d73c353a42"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#ad56238cd7b2c7e680a9066d73c353a42">OnCollisionEnter2D</a> (const CollisionEvent &amp;collision)</td></tr>
+<tr class="memdesc:ad56238cd7b2c7e680a9066d73c353a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when another object enters a trigger collider attached to this object (2D physics only). <br /></td></tr>
+<tr class="separator:ad56238cd7b2c7e680a9066d73c353a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d0ad185e399e01de7a5f1c40f8375a"><td class="memItemLeft" align="right" valign="top"><a id="a21d0ad185e399e01de7a5f1c40f8375a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a21d0ad185e399e01de7a5f1c40f8375a">OnCollisionExit2D</a> (const CollisionEvent &amp;collision)</td></tr>
+<tr class="memdesc:a21d0ad185e399e01de7a5f1c40f8375a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when another object leaves a trigger collider attached to this object (2D physics only). <br /></td></tr>
+<tr class="separator:a21d0ad185e399e01de7a5f1c40f8375a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85be24e9524c094b4590a89f990efc8e"><td class="memItemLeft" align="right" valign="top"><a id="a85be24e9524c094b4590a89f990efc8e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a85be24e9524c094b4590a89f990efc8e">OnMouseMoved</a> (const MouseEvent &amp;event)</td></tr>
+<tr class="memdesc:a85be24e9524c094b4590a89f990efc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when the cursor is moved over the <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a> this script is attached to. <br /></td></tr>
+<tr class="separator:a85be24e9524c094b4590a89f990efc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c2ab3ba8e065478c0e0a7c5e9f241"><td class="memItemLeft" align="right" valign="top"><a id="a259c2ab3ba8e065478c0e0a7c5e9f241"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a259c2ab3ba8e065478c0e0a7c5e9f241">OnMousePressed</a> (const MouseEvent &amp;event)</td></tr>
+<tr class="memdesc:a259c2ab3ba8e065478c0e0a7c5e9f241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when the mouse is pressed on the <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a> this script is attached to. <br /></td></tr>
+<tr class="separator:a259c2ab3ba8e065478c0e0a7c5e9f241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba65af9bb7ce256186aec5bd50b80a74"><td class="memItemLeft" align="right" valign="top"><a id="aba65af9bb7ce256186aec5bd50b80a74"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#aba65af9bb7ce256186aec5bd50b80a74">OnMouseReleased</a> (const MouseEvent &amp;event)</td></tr>
+<tr class="memdesc:aba65af9bb7ce256186aec5bd50b80a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when the mouse is released on the <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a> this script is attached to. <br /></td></tr>
+<tr class="separator:aba65af9bb7ce256186aec5bd50b80a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e8681bb251e9c6eedb8d9dd9034798"><td class="memItemLeft" align="right" valign="top"><a id="ad2e8681bb251e9c6eedb8d9dd9034798"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#ad2e8681bb251e9c6eedb8d9dd9034798">OnKeyPressed</a> (const KeyEvent &amp;event)</td></tr>
+<tr class="memdesc:ad2e8681bb251e9c6eedb8d9dd9034798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when a key is pressed. <br /></td></tr>
+<tr class="separator:ad2e8681bb251e9c6eedb8d9dd9034798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd15182a783348d76c9ecd2c3ad4641"><td class="memItemLeft" align="right" valign="top"><a id="a1bd15182a783348d76c9ecd2c3ad4641"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1BehaviourScript.html#a1bd15182a783348d76c9ecd2c3ad4641">OnKeyReleased</a> (const KeyEvent &amp;event)</td></tr>
+<tr class="memdesc:a1bd15182a783348d76c9ecd2c3ad4641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when a key is released. <br /></td></tr>
+<tr class="separator:a1bd15182a783348d76c9ecd2c3ad4641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classspic_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classspic_1_1Component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classspic_1_1Component.html">spic::Component</a></td></tr>
 <tr class="memitem:a0240ed3c3632a2fa08b90796c0600020 inherit pub_methods_classspic_1_1Component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Component.html#a0240ed3c3632a2fa08b90796c0600020">Active</a> () const</td></tr>
 <tr class="memdesc:a0240ed3c3632a2fa08b90796c0600020 inherit pub_methods_classspic_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for active status.  <a href="classspic_1_1Component.html#a0240ed3c3632a2fa08b90796c0600020">More...</a><br /></td></tr>

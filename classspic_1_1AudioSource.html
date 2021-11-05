@@ -93,6 +93,9 @@ Collaboration diagram for spic::AudioSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab6b8a4e8522b2525033ac766d03bde9e"><td class="memItemLeft" align="right" valign="top"><a id="ab6b8a4e8522b2525033ac766d03bde9e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AudioSource</b> (const std::string &amp;url, bool playOnAwake, double volume)</td></tr>
+<tr class="separator:ab6b8a4e8522b2525033ac766d03bde9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0f771fd18c9fd2dee6c1e5bf187465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1AudioSource.html#a5b0f771fd18c9fd2dee6c1e5bf187465">Play</a> (bool looping)</td></tr>
 <tr class="memdesc:a5b0f771fd18c9fd2dee6c1e5bf187465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to start playing audio.  <a href="classspic_1_1AudioSource.html#a5b0f771fd18c9fd2dee6c1e5bf187465">More...</a><br /></td></tr>
 <tr class="separator:a5b0f771fd18c9fd2dee6c1e5bf187465"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +103,32 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1AudioSource.html#a88f2d65890e4ce1de154dd3e90b4158f">Stop</a> ()</td></tr>
 <tr class="memdesc:a88f2d65890e4ce1de154dd3e90b4158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to stop playing audio. <br /></td></tr>
 <tr class="separator:a88f2d65890e4ce1de154dd3e90b4158f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662ef372a4dfe6ef093cc5bd108e56ff"><td class="memItemLeft" align="right" valign="top"><a id="a662ef372a4dfe6ef093cc5bd108e56ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1AudioSource.html#a662ef372a4dfe6ef093cc5bd108e56ff">Pause</a> ()</td></tr>
+<tr class="memdesc:a662ef372a4dfe6ef093cc5bd108e56ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to pause audio. <br /></td></tr>
+<tr class="separator:a662ef372a4dfe6ef093cc5bd108e56ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf83b1df85e08cea7ecb48c4c8aa5f52"><td class="memItemLeft" align="right" valign="top"><a id="adf83b1df85e08cea7ecb48c4c8aa5f52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1AudioSource.html#adf83b1df85e08cea7ecb48c4c8aa5f52">Resume</a> ()</td></tr>
+<tr class="memdesc:adf83b1df85e08cea7ecb48c4c8aa5f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this method to resume audio if paused. <br /></td></tr>
+<tr class="separator:adf83b1df85e08cea7ecb48c4c8aa5f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96530884a2a4524a4d281543eff4cc8"><td class="memItemLeft" align="right" valign="top"><a id="ad96530884a2a4524a4d281543eff4cc8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldLoop</b> ()</td></tr>
+<tr class="separator:ad96530884a2a4524a4d281543eff4cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2df4d323ea9c99d0e642462a111bb5"><td class="memItemLeft" align="right" valign="top"><a id="a1a2df4d323ea9c99d0e642462a111bb5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPlayOnAwake</b> (bool flag)</td></tr>
+<tr class="separator:a1a2df4d323ea9c99d0e642462a111bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fcb39fe9e9ff8b8b0b5158f5cc52c4"><td class="memItemLeft" align="right" valign="top"><a id="a49fcb39fe9e9ff8b8b0b5158f5cc52c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlayOnAwake</b> ()</td></tr>
+<tr class="separator:a49fcb39fe9e9ff8b8b0b5158f5cc52c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909b59a94670c332c10585af46368d9b"><td class="memItemLeft" align="right" valign="top"><a id="a909b59a94670c332c10585af46368d9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVolume</b> (double newVolume)</td></tr>
+<tr class="separator:a909b59a94670c332c10585af46368d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac058799117db819e565ba0be878423fe"><td class="memItemLeft" align="right" valign="top"><a id="ac058799117db819e565ba0be878423fe"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetVolume</b> ()</td></tr>
+<tr class="separator:ac058799117db819e565ba0be878423fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aeeb2714ecc4603744ace3c2552062a"><td class="memItemLeft" align="right" valign="top"><a id="a9aeeb2714ecc4603744ace3c2552062a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetUrl</b> ()</td></tr>
+<tr class="separator:a9aeeb2714ecc4603744ace3c2552062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classspic_1_1Component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classspic_1_1Component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classspic_1_1Component.html">spic::Component</a></td></tr>
 <tr class="memitem:a0240ed3c3632a2fa08b90796c0600020 inherit pub_methods_classspic_1_1Component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Component.html#a0240ed3c3632a2fa08b90796c0600020">Active</a> () const</td></tr>
 <tr class="memdesc:a0240ed3c3632a2fa08b90796c0600020 inherit pub_methods_classspic_1_1Component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for active status.  <a href="classspic_1_1Component.html#a0240ed3c3632a2fa08b90796c0600020">More...</a><br /></td></tr>

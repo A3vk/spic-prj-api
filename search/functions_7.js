@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['isactiveinworld_148',['IsActiveInWorld',['../classspic_1_1GameObject.html#a155cb2e2f87e48dc762d2c47c00ec197',1,'spic::GameObject']]],
-  ['isactiveself_149',['IsActiveSelf',['../classspic_1_1GameObject.html#aa09610b99a84be4b7c348f56f59da638',1,'spic::GameObject']]]
+  ['log_171',['Log',['../namespacespic_1_1Debug.html#afd83a46e9be35c620d08faec43233677',1,'spic::Debug']]],
+  ['logerror_172',['LogError',['../namespacespic_1_1Debug.html#aeb31fabbcf138d4ac2cf5c9efd039d63',1,'spic::Debug']]],
+  ['logwarning_173',['LogWarning',['../namespacespic_1_1Debug.html#acb3619c626a75b02305b1db85b6ffa2c',1,'spic::Debug']]]
 ];

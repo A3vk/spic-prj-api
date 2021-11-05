@@ -68,10 +68,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classspic_1_1Scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">spic::Scene Class Reference</div>  </div>
+<div class="title">spic::Scene Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -84,15 +83,36 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af93b0e10186dff5f5701d5c6262e378e"><td class="memItemLeft" align="right" valign="top"><a id="af93b0e10186dff5f5701d5c6262e378e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">RenderScene</a> ()</td></tr>
-<tr class="memdesc:af93b0e10186dff5f5701d5c6262e378e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by a <a class="el" href="classspic_1_1Camera.html" title="Class representing a point of view towards the game scene.">Camera</a> to render the scene on the engine. <br /></td></tr>
+<tr class="memdesc:af93b0e10186dff5f5701d5c6262e378e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by a <a class="el" href="classspic_1_1Camera.html" title="Class representing a point of view towards the game scene.">Camera</a> to render the scene on the engine. <br /></td></tr>
 <tr class="separator:af93b0e10186dff5f5701d5c6262e378e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a073965b459f27d58005051e0138151a6"><td class="memItemLeft" align="right" valign="top"><a id="a073965b459f27d58005051e0138151a6"></a>
-std::vector&lt; std::shared_ptr&lt; <a class="el" href="classspic_1_1GameObject.html">GameObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a073965b459f27d58005051e0138151a6">contents</a></td></tr>
-<tr class="memdesc:a073965b459f27d58005051e0138151a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property contains all the Game Object that are contained in this scene. <br /></td></tr>
-<tr class="separator:a073965b459f27d58005051e0138151a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7242e62f035093338fd133a68240f500"><td class="memItemLeft" align="right" valign="top"><a id="a7242e62f035093338fd133a68240f500"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a7242e62f035093338fd133a68240f500">OnCreate</a> ()=0</td></tr>
+<tr class="memdesc:a7242e62f035093338fd133a68240f500"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when creating the scene, should be overridden. <br /></td></tr>
+<tr class="separator:a7242e62f035093338fd133a68240f500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdcd9917035e661adacb4ee645843d5e"><td class="memItemLeft" align="right" valign="top"><a id="acdcd9917035e661adacb4ee645843d5e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#acdcd9917035e661adacb4ee645843d5e">OnDestroy</a> ()=0</td></tr>
+<tr class="memdesc:acdcd9917035e661adacb4ee645843d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when destroying the scene, should be overridden. <br /></td></tr>
+<tr class="separator:acdcd9917035e661adacb4ee645843d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777429b7fe37e15277a2005495813a16"><td class="memItemLeft" align="right" valign="top"><a id="a777429b7fe37e15277a2005495813a16"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a777429b7fe37e15277a2005495813a16">OnLoad</a> ()=0</td></tr>
+<tr class="memdesc:a777429b7fe37e15277a2005495813a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when loading the scene, should be overridden. <br /></td></tr>
+<tr class="separator:a777429b7fe37e15277a2005495813a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f7368daba318770ff930103bd1ede5"><td class="memItemLeft" align="right" valign="top"><a id="ab7f7368daba318770ff930103bd1ede5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5">OnUnload</a> ()=0</td></tr>
+<tr class="memdesc:ab7f7368daba318770ff930103bd1ede5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when unloading the scene, should be overridden. <br /></td></tr>
+<tr class="separator:ab7f7368daba318770ff930103bd1ede5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb3466facfce2aa904f1a36dbe31716"><td class="memItemLeft" align="right" valign="top"><a id="a2bb3466facfce2aa904f1a36dbe31716"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">OnActivate</a> ()=0</td></tr>
+<tr class="memdesc:a2bb3466facfce2aa904f1a36dbe31716"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when activating the scene, should be overridden. <br /></td></tr>
+<tr class="separator:a2bb3466facfce2aa904f1a36dbe31716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c4c3f92e4f312a57e725cc139b5d91"><td class="memItemLeft" align="right" valign="top"><a id="a10c4c3f92e4f312a57e725cc139b5d91"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">OnDeactivate</a> ()=0</td></tr>
+<tr class="memdesc:a10c4c3f92e4f312a57e725cc139b5d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when deactivating the scene, should be overridden. <br /></td></tr>
+<tr class="separator:a10c4c3f92e4f312a57e725cc139b5d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdb184b7af6d9f63d6b3bb7e6ddb7ae"><td class="memItemLeft" align="right" valign="top"><a id="a5fdb184b7af6d9f63d6b3bb7e6ddb7ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">Update</a> ()=0</td></tr>
+<tr class="memdesc:a5fdb184b7af6d9f63d6b3bb7e6ddb7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the scene needs to be updated. <br /></td></tr>
+<tr class="separator:a5fdb184b7af6d9f63d6b3bb7e6ddb7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a scene which can be rendered by the <a class="el" href="classspic_1_1Camera.html" title="Class representing a point of view towards the game scene.">Camera</a>. </p>

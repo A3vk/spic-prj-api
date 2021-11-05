@@ -1,0 +1,7 @@
+<map id="spic::Events::CollisionEvent" name="spic::Events::CollisionEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="5,199,185,225"/>
+<area shape="rect" id="node2" href="$structspic_1_1Events_1_1Event.html" title=" " alt="" coords="9,95,139,121"/>
+<area shape="rect" id="node3" href="$classspic_1_1Collider.html" title="The base class for all colliders." alt="" coords="164,95,259,121"/>
+<area shape="rect" id="node4" href="$classspic_1_1Component.html" title="Base class for all components." alt="" coords="79,5,197,32"/>
+<area shape="rect" id="node5" href="$structspic_1_1Vector2.html" title="Struct representing both a 2D point and a 2D vector." alt="" coords="221,5,348,32"/>
+</map>

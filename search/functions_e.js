@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timescale_176',['TimeScale',['../classspic_1_1Time.html#a9936321ffb0c032fc718a0f8b507338f',1,'spic::Time::TimeScale()'],['../classspic_1_1Time.html#a806da38f6176fd9776dcf89d9fec1e4d',1,'spic::Time::TimeScale(double newTimeScale)']]]
+  ['white_206',['white',['../classspic_1_1Color.html#ab148408a6db0248e5c1da4049b932c7e',1,'spic::Color']]]
 ];
