@@ -14,7 +14,7 @@ namespace spic {
     class CircleCollider : public Collider {
         public:
 
-            CircleCollider(double radius, std::vector<int> collideLayers, Vector2 offset) : Collider(collideLayers, offset);
+            CircleCollider(double radius, std::vector<int> collideLayers, Vector2<> offset) : Collider(collideLayers, offset);
             /**
              * @brief Get the collider's radius
              * @return The radius

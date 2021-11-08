@@ -7,7 +7,7 @@
 
 namespace spic {
 	struct Particle {
-		Vector2 Gravity;
+		Vector2<> Gravity;
 		float RadialAcceleration;
 		float RadialAccelerationVar;
 		float Speed;
@@ -23,7 +23,7 @@ namespace spic {
 		float EmissionRate;
 		Color StartColor;
 		Color EndColor;
-		Vector2 EmissionArea;
+		Vector2<> EmissionArea;
 	};
 }
 

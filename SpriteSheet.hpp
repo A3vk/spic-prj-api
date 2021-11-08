@@ -9,7 +9,7 @@
 namespace spic {
 	class SpriteSheet {
 	public:
-		SpriteSheet(Vector2 frameSize, const std::string& url, int spriteCount);
+		SpriteSheet(Vector2<int> frameSize, const std::string& url, int spriteCount);
 		const Sprite& operator[](int i);
 		int GetSpriteCount();
 	private:

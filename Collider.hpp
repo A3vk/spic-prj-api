@@ -13,7 +13,7 @@ namespace spic {
      */
     class Collider : public Component {
     public:
-        Collider(std::vector<int> collideLayers, Vector2 offset);
+        Collider(std::vector<int> collideLayers, Vector2<> offset);
         Vector2 offset;
     private:
     #include "Collider_private.hpp"
