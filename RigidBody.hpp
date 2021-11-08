@@ -28,7 +28,7 @@ namespace spic {
              * @param forceDirection A point, used as a vector to indicate direction
              *        and magnitude of the force to be applied.
              */
-            void AddForce(const Vector2<>& forceDirection);
+            void AddForce(const Vector2<float>& forceDirection);
 
             double GetMass();
 

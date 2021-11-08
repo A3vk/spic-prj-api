@@ -281,7 +281,7 @@ namespace spic {
         /**
          * @brief The current mouse position in pixel coordinates. (Read Only)
          */
-        const Vector2<> MousePosition();
+        const Vector2<float> MousePosition();
 
         /**
          * @brief Returns true while the user holds down the key identified by keycode.
