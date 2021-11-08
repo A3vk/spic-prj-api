@@ -13,6 +13,7 @@ namespace spic {
 
 		static std::vector<std::shared_ptr<GameObject>> GameObjects;
 	};
+#include "Resources_templates.hpp"
 }
 
 #endif // RESOURCES_H_
