@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['magenta_174',['magenta',['../classspic_1_1Color.html#ad1de7fbd69c3b7d60c0b6435bcae57ea',1,'spic::Color']]],
-  ['mouseposition_175',['MousePosition',['../namespacespic_1_1Input.html#a4bbcb161cdaa1a09f404fac21d4dbd94',1,'spic::Input']]]
+  ['magenta_176',['magenta',['../classspic_1_1Color.html#ad1de7fbd69c3b7d60c0b6435bcae57ea',1,'spic::Color']]],
+  ['mouseposition_177',['MousePosition',['../namespacespic_1_1Input.html#ac9c3c41267a45ded0099a1424aee4577',1,'spic::Input']]]
 ];

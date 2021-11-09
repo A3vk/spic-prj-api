@@ -1,5 +1,5 @@
 <map id="spic::Events::MouseEvent" name="spic::Events::MouseEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="61,95,232,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="65,95,236,121"/>
 <area shape="rect" id="node2" href="$structspic_1_1Events_1_1Event.html" title=" " alt="" coords="5,5,136,32"/>
-<area shape="rect" id="node3" href="$structspic_1_1Vector2.html" title="Struct representing both a 2D point and a 2D vector." alt="" coords="161,5,287,32"/>
+<area shape="rect" id="node3" href="$structspic_1_1Vector2.html" title=" " alt="" coords="159,5,302,32"/>
 </map>
