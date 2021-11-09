@@ -107,7 +107,6 @@ namespace spic {
             template<class T>
             void AddComponent(std::shared_ptr<Component> component);
 
-            template<class T>
             void RemoveComponent(std::shared_ptr<Component> component);
 
             /**
