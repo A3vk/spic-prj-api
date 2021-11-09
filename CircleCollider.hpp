@@ -33,7 +33,9 @@ namespace spic {
             void Radius(float newRadius);
 
         private:
-        #include "CircleCollider_private.hpp"
+        #if __has_include("CircleCollider_private.hpp")
+            #include "CircleCollider_private.hpp"
+        #endif
     };
 
 }

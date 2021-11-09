@@ -30,9 +30,15 @@ namespace spic {
 		std::vector<std::shared_ptr<T>> GetByType();
 
 	private:
-	#include "GameObjectList_private.hpp"
+	#if __has_include("GameObjectList_private.hpp")
+		#include "GameObjectList_private.hpp"
+	#endif
+
 	};
-	#include "GameObjectList_templates.hpp"
+
+	#if __has_include("GameObjectList_templates.hpp")
+		#include "GameObjectList_templates.hpp"
+	#endif
 }
 
 #endif // GAMEOBJECTLIST_H_

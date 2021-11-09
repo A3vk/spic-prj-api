@@ -18,7 +18,9 @@ namespace spic {
 		const Sprite& operator[](int i);
 		int GetSpriteCount();
 	private:
-	#include "SpriteSheet_private.hpp"
+	#if __has_include("SpriteSheet_private.hpp")
+		#include "SpriteSheet_private.hpp"
+	#endif
 	};
 }
 

@@ -21,7 +21,9 @@ namespace spic {
         Collider(std::vector<int> collideLayers, Vector2<float> offset);
         Vector2 offset;
     private:
-    #include "Collider_private.hpp"
+    #if __has_include("Collider_private.hpp")
+        #include "Collider_private.hpp"
+    #endif
     };
 
 }

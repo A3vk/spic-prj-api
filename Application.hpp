@@ -19,7 +19,9 @@ namespace spic
 		virtual void OnUpdate();
 
 	protected:
-	#include "Application_protected.hpp"
+	#if __has_include("Application_protected.hpp")
+		#include "Application_protected.hpp"
+	#endif
 	};
 
 	Application* CreateApplication();

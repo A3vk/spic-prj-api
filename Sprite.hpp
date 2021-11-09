@@ -38,7 +38,9 @@ namespace spic {
         void SetOrderInLayer(int newOrder);
 
     private:
-    #include "Sprite_private.hpp"
+    #if __has_include("Sprite_private.hpp")
+        #include "Sprite_private.hpp"
+    #endif
     };
 
 }

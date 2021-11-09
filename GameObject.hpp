@@ -204,12 +204,19 @@ namespace spic {
             std::vector<std::shared_ptr<Component>> components;
             std::shared_ptr<GameObject> parent;
             std::vector<std::shared_ptr<GameObject>> children;
-        #include "GameObject_protected.hpp"
+
+        #if __has_include("GameObject_protected.hpp")
+            #include "GameObject_protected.hpp"
+        #endif
 
         private:
-        #include "GameObject_private.hpp"
+        #if __has_include("GameObject_private.hpp")
+            #include "GameObject_private.hpp"
+        #endif
     };
-    #include "GameObject_templates.hpp"
+    #if __has_include("GameObject_templates.hpp")
+        #include "GameObject_templates.hpp"
+    #endif
 }
 
 #endif // GAMEOBJECT_H_

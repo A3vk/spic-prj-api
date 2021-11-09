@@ -48,7 +48,9 @@ namespace spic {
             void SetBodyType(BodyType newBodyType);
 
         private:
-        #include "RigidBody_private.hpp"
+        #if __has_include("RigidBody_private.hpp")
+            #include "RigidBody_private.hpp"
+        #endif
     };
 
 }

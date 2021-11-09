@@ -37,7 +37,9 @@ namespace spic {
             void SetFps(int newFps);
 
         private:
-        #include "Animator_private.hpp"
+        #if __has_include("Animator_private.hpp")
+            #include "Animator_private.hpp"
+        #endif
     };
 }
 

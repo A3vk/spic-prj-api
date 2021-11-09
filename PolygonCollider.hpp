@@ -16,7 +16,9 @@ namespace spic {
 		PolygonCollider(std::vector<Vector2<float>> points, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
 		void AddPoint(Vector2<float> newPoint);
 	private:
-	#include "PolygonCollider_private.hpp"
+	#if __has_include("PolygonCollider_private.hpp")
+		#include "PolygonCollider_private.hpp"
+	#endif
 	};
 }
 

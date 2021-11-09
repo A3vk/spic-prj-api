@@ -53,7 +53,9 @@ namespace spic {
             std::string GetUrl() const;
 
         private:
+        #if __has_include("AudioSource_private.hpp")
             #include "AudioSource_private.hpp"
+        #endif
     };
 }
 

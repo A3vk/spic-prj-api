@@ -22,7 +22,9 @@ namespace spic {
 		static void MoveGameObject(std::shared_ptr<GameObject> object, std::shared_ptr<Scene> scene);
 		static void RemoveGameObject(std::shared_ptr<GameObject> object);
 	private:
-	#include "SceneManager_private.hpp"
+	#if __has_include("SceneManager_private.hpp")
+		#include "SceneManager_private.hpp"
+	#endif
 	};
 }
 

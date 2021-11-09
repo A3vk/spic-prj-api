@@ -37,7 +37,9 @@ namespace spic {
             void SetInteractable(bool interactable);
 
         private:
-        #include "Button_private.hpp"
+        #if __has_include("Button_private.hpp")
+            #include "Button_private.hpp"
+        #endif
     };
 
 }

@@ -36,7 +36,9 @@ namespace spic {
 
         void SetScene(std::shared_ptr<Scene> scene);
     private:
-    #include "Camera_private.hpp"
+    #if __has_include("Camera_private.hpp")
+        #include "Camera_private.hpp"
+    #endif
     };
 
 }

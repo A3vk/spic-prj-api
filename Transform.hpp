@@ -22,7 +22,9 @@ namespace spic {
         double Rotation;
         double Scale;
     private:
-    #include "Transform_private.hpp"
+    #if __has_include("Transform_private.hpp")
+        #include "Transform_private.hpp"
+    #endif
     };
 }
 

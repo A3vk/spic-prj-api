@@ -45,7 +45,9 @@ namespace spic {
         void SetColor(Color newColor);
 
     private:
-    #include "Text_private.hpp"
+    #if __has_include("Text_private.hpp")
+        #include "Text_private.hpp"
+    #endif
     };
 
 }

@@ -24,7 +24,9 @@ namespace spic {
         float GetHeight();
         virtual SetHeight(float newHeight);
     private:
-    #include "UIObject_private.hpp"
+    #if __has_include("UIObject_private.hpp")
+        #include "UIObject_private.hpp"
+    #endif
     };
 
 }

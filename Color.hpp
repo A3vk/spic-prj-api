@@ -73,7 +73,9 @@ namespace spic {
             // ... more standard colors here
 
         private:
-        #include "Color_private.hpp"
+        #if __has_include("Color_private.hpp")
+            #include "Color_private.hpp"
+        #endif
     };
 
 }

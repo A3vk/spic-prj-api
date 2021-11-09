@@ -55,10 +55,14 @@ namespace spic {
             
 
         private:
-        #include "Scene_private.hpp"
+        #if __has_include("Scene_private.hpp")
+            #include "Scene_private.hpp"
+        #endif
 
         protected:
-        #include "Scene_protected.hpp"
+        #if __has_include("Scene_protected.hpp")
+            #include "Scene_protected.hpp"
+        #endif
     };
 
 }

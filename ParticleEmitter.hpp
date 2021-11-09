@@ -17,7 +17,9 @@ namespace spic {
 		void Play();
 		void Stop();
 	private:
-	#include "ParticleEmitter_private.hpp"
+	#if __has_include("ParticleEmitter_private.hpp")
+		#include "ParticleEmitter_private.hpp"
+	#endif
 	};
 }
 

@@ -30,7 +30,9 @@ namespace spic {
             void Active(bool flag) { active = flag; }
 
         private:
+        #if __has_include("Component_private.hpp")
         #include "Component_private.hpp"
+        #endif
     };
 
 }

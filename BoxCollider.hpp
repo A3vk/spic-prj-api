@@ -43,7 +43,9 @@ namespace spic {
             void SetHeight(float newHeight);
 
         private:
-        #include "BoxCollider_private.hpp"
+        #if __has_include("BoxCollider_private.hpp")
+            #include "BoxCollider_private.hpp"
+        #endif
     };
 }
 
