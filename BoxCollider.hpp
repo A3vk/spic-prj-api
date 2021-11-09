@@ -12,30 +12,30 @@ namespace spic {
     class BoxCollider : public Collider {
         public:
 
-            BoxCollider(double width, double height, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
+            BoxCollider(float width, float height, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
             /**
              * @brief The collider's width
              * @return The current width
              */
-            double GetWidth();
+            float GetWidth();
 
             /**
              * @brief The collider's width
              * @param newWidth The desired width
              */
-            void SetWidth(double newWidth);
+            void SetWidth(float newWidth);
 
             /**
              * @brief The collider's height
              * @return The current height
              */
-            double GetHeight();
+            float GetHeight();
 
             /**
              * @brief The collider's height
              * @param newHeight The desired height
              */
-            void SetHeight(double newHeight);
+            void SetHeight(float newHeight);
 
         private:
         #include "BoxCollider_private.hpp"

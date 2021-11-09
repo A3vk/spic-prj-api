@@ -13,19 +13,19 @@ namespace spic {
      */
     class Camera : public GameObject {
     public:
-        Camera(Color backgroundColor, double aspectWidth, double aspectHeight, const std::string& name) : GameObject(name);
+        Camera(Color backgroundColor, float aspectWidth, float aspectHeight, const std::string& name) : GameObject(name);
         
         Color GetBackgroundColor();
 
         void SetBackgroundColor(Color color);
 
-        double GetAspectWidth();
+        float GetAspectWidth();
 
-        void SetAspectWidth(double aspectWidth);
+        void SetAspectWidth(float aspectWidth);
 
-        double GetAspectHeight();
+        float GetAspectHeight();
 
-        void SetAspectHeight(double aspectHeight);
+        void SetAspectHeight(float aspectHeight);
 
         std::shared_ptr<Scene> GetScene();
 

@@ -11,13 +11,13 @@ namespace spic {
      */
     class UIObject : public GameObject {
     public:
-        UIObject(double width, double height, const std::string& name) : GameObject(name);
+        UIObject(float width, float height, const std::string& name) : GameObject(name);
 
-        double GetWidth();
-        virtual SetWidth(double newWidth);
+        float GetWidth();
+        virtual SetWidth(float newWidth);
 
-        double GetHeight();
-        virtual SetHeight(double newHeight);
+        float GetHeight();
+        virtual SetHeight(float newHeight);
     private:
     #include "UIObject_private.hpp"
     };

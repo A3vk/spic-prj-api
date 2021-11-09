@@ -22,7 +22,7 @@ namespace spic {
      */
     class Text : public UIObject {
     public:
-        Text(const std::string& text, const std::string& font, int size, Alignment alignment, Color color, double width, double height, const std::string& name) : UIObject(width, height, name);
+        Text(const std::string& text, const std::string& font, int size, Alignment alignment, Color color, float width, float height, const std::string& name) : UIObject(width, height, name);
         
         std::string GetText;
         void SetText(const std::string& newText);
