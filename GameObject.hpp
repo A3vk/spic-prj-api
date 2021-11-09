@@ -5,6 +5,7 @@
 
 #include "Component.hpp"
 #include "Vector2.hpp"
+#include "Transform.hpp"
 #include <string>
 #include <vector>
 #include <memory>
