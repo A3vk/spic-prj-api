@@ -22,21 +22,21 @@ namespace spic {
     class RigidBody : public Component {
         public:
 
-            RigidBody(double mass, double gravityScale, BodyType bodyType);
+            RigidBody(float mass, float gravityScale, BodyType bodyType);
             /**
              * @brief Apply force to this rigid body.
              * @param forceDirection A point, used as a vector to indicate direction
              *        and magnitude of the force to be applied.
              */
-            void AddForce(const Vector2& forceDirection);
+            void AddForce(const Vector2<float>& forceDirection);
 
-            double GetMass();
+            float GetMass();
 
-            void SetMass(double newMass);
+            void SetMass(float newMass);
 
-            double GetGravityScale();
+            float GetGravityScale();
 
-            void SetGravityScale(double newScale);
+            void SetGravityScale(float newScale);
 
             BodyType GetBodyType();
 

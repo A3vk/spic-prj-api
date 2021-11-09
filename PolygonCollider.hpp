@@ -8,8 +8,8 @@
 namespace spic {
 	class PolygonCollider : public Collider {
 	public:
-		PolygonCollider(std::vector<Vector2> points, std::vector<int> collideLayers, Vector2 offset) : Collider(collideLayers, offset);
-		void AddPoint(Vector2 newPoint);
+		PolygonCollider(std::vector<Vector2<float>> points, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
+		void AddPoint(Vector2<float> newPoint);
 	private:
 	#include "PolygonCollider_private.hpp"
 	};

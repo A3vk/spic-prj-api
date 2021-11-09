@@ -5,8 +5,8 @@
 
 namespace spic {
 	struct Ray {
-		Vector2 Origin;
-		Vector2 Direction;
+		Vector2<float> Origin;
+		Vector2<float> Direction;
 	};
 }
 

@@ -13,7 +13,7 @@ namespace spic {
     class Button : public UIObject {
         public:
 
-            Button(double width, double height, const std::string& name, bool interactable = true) : UIObject(width, height, name);
+            Button(float width, float height, const std::string& name, bool interactable = true) : UIObject(width, height, name);
             /**
              * @brief This function is called when the button is clicked, which
              *        will trigger a call to the registered onClick member.

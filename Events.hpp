@@ -15,7 +15,7 @@ namespace spic {
 		};
 
 		struct MouseEvent : public Event {
-			spic::Vector2 Position;
+			spic::Vector2<float> Position;
 			spic::MouseButton Button;
 			bool IsPressed;
 		};

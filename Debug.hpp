@@ -19,7 +19,7 @@ namespace spic {
          * @param end The end point.
          * @param color The line color, defaults to white.
          */
-        void DrawLine(const Vector2& start, const Vector2& end, const Color& color = Color::white());
+        void DrawLine(const Vector2<float>& start, const Vector2<float>& end, const Color& color = Color::white());
 
         /**
          * @brief Logs a message to the Console.

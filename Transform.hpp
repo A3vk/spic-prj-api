@@ -10,8 +10,8 @@ namespace spic {
      */
     class Transform {
     public:
-        Transform(const Vector2& pos, double rot, double scale);
-        void LookAt(const Vector2& pos);
+        Transform(const Vector2<float>& pos, float rot, float scale);
+        void LookAt(const Vector2<float>& pos);
     private:
     #include "Transform_private.hpp"
     };
