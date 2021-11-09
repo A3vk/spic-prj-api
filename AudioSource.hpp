@@ -1,6 +1,8 @@
 #ifndef AUDIOSOURCE_H_
 #define AUDIOSOURCE_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include <string>
 
@@ -13,7 +15,7 @@ namespace spic {
     /**
      * @brief Component which can play audio.
      */
-    class AudioSource : public Component {
+    class DLL_EXPORT AudioSource : public Component {
         public:
 
             AudioSource(const std::string& url, bool playOnAwake, double volume);

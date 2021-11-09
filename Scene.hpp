@@ -1,6 +1,8 @@
 #ifndef SCENE_H_
 #define SCENE_H_
 
+#include "Export.hpp"
+
 #include "GameObject.hpp"
 
 #if __has_include("Scene_extra_includes.hpp")
@@ -12,7 +14,7 @@ namespace spic {
     /**
      * @brief Class representing a scene which can be rendered by the Camera.
      */
-    class Scene {
+    class DLL_EXPORT Scene {
         public:
 
             Scene();

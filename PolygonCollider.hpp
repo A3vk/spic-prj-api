@@ -1,6 +1,8 @@
 #ifndef POLYGONCOLLIDER_H_
 #define POLYGONCOLLIDER_H_
 
+#include "Export.hpp"
+
 #include <vector>
 #include "Collider.hpp"
 
@@ -9,7 +11,7 @@
 #endif
 
 namespace spic {
-	class PolygonCollider : public Collider {
+	class DLL_EXPORT PolygonCollider : public Collider {
 	public:
 		PolygonCollider(std::vector<Vector2<float>> points, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
 		void AddPoint(Vector2<float> newPoint);

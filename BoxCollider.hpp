@@ -1,6 +1,8 @@
 #ifndef BOXCOLLIDER_H_
 #define BOXCOLLIDER_H_
 
+#include "Export.hpp"
+
 #include "Collider.hpp"
 
 #if __has_include("BoxCollider_extra_includes.hpp")
@@ -12,7 +14,7 @@ namespace spic {
     /**
      * @brief A collider which represents a rectangular collision area.
      */
-    class BoxCollider : public Collider {
+    class DLL_EXPORT BoxCollider : public Collider {
         public:
 
             BoxCollider(float width, float height, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);

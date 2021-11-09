@@ -1,6 +1,8 @@
 #ifndef GAMEOBJECT_H_
 #define GAMEOBJECT_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Vector2.hpp"
 #include <string>
@@ -17,7 +19,7 @@ namespace spic {
     /**
      * @brief Any object which should be represented on screen.
      */
-    class GameObject {
+    class DLL_EXPORT GameObject {
         public:
             /**
              * @brief Finds a GameObject by name and returns it.

@@ -1,6 +1,8 @@
 #ifndef PARTICLE_H_
 #define PARTICLE_H_
 
+#include "Export.hpp"
+
 #include "Color.hpp"
 #include "Vector2.hpp"
 
@@ -9,7 +11,7 @@
 #endif
 
 namespace spic {
-	struct Particle {
+	struct DLL_EXPORT Particle {
 		Vector2<float> Gravity;
 		float RadialAcceleration;
 		float RadialAccelerationVar;

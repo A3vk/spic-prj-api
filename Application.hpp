@@ -1,13 +1,15 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#include "Export.hpp"
+
 #if __has_include("Application_extra_includes.hpp")
 	#include "Application_extra_includes.hpp"
 #endif
 
 namespace spic
 {
-	class Application
+	class DLL_EXPORT Application
 	{
 	public:
 		Application();

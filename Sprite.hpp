@@ -1,6 +1,8 @@
 #ifndef SPRITERENDERER_H_
 #define SPRITERENDERER_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Color.hpp"
 #include <string>
@@ -14,7 +16,7 @@ namespace spic {
     /**
      * @brief A component representing a sprite (small image)
      */
-    class Sprite : public Component {
+    class DLL_EXPORT Sprite : public Component {
     public:
         Sprite(const std::string& sprite, Color color, int sortingLayer, int orderInLayer);
 

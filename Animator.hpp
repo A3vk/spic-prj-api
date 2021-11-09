@@ -1,6 +1,8 @@
 #ifndef ANIMATOR_H_
 #define ANIMATOR_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Sprite.hpp"
 #include "SpriteSheet.hpp"
@@ -14,7 +16,7 @@ namespace spic {
     /**
      * @brief A component which can play animated sequences of sprites.
      */
-    class Animator : public Component {
+    class DLL_EXPORT Animator : public Component {
         public:
 
             Animator(SpriteSheet sheet, int fps);

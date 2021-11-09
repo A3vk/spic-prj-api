@@ -1,9 +1,11 @@
 #ifndef EVENTTYPE_H_
 #define EVENTTYPE_H_
 
+#include "Export.hpp"
+
 namespace spic {
 	namespace Events {
-		enum EventType {
+		enum DLL_EXPORT EventType {
 			None,
 			WindowClose,
 			WindowResize,

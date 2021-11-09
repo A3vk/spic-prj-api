@@ -1,6 +1,8 @@
 #ifndef RESOURCES_H_
 #define RESOURCES_H_
 
+#include "Export.hpp"
+
 #include "GameObject.hpp"
 #include <memory>
 
@@ -9,7 +11,7 @@
 #endif
 
 namespace spic {
-	class Resources {
+	class DLL_EXPORT Resources {
 	public:
 		template<class T, std::enable_if_t<std::is_base_of_v<GameObject, T>>* = nullptr>
 		static std::shared_ptr<T> CreateGameObject(const std::string& name);

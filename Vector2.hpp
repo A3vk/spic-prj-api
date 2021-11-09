@@ -1,13 +1,15 @@
 #ifndef VECTOR2_H_
 #define VECTOR2_H_
 
+#include "Export.hpp"
+
 namespace spic {
 
     /**
      * @brief Struct representing both a 2D point and a 2D vector.
      */
     template<class T = float>
-    struct Vector2 {
+    struct DLL_EXPORT Vector2 {
         T x;
         T y;
 

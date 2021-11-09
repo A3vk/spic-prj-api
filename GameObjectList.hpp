@@ -1,6 +1,8 @@
 #ifndef GAMEOBJECTLIST_H_
 #define GAMEOBJECTLIST_H_
 
+#include "Export.hpp"
+
 #include <memory>
 #include <vector>
 #include <string>
@@ -12,7 +14,7 @@
 #endif
 
 namespace spic {
-	class GameObjectList {
+	class DLL_EXPORT GameObjectList {
 	public:
 		GameObjectList();
 		std::shared_ptr<Camera> GetActiveCamera();

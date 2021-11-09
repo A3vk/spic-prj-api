@@ -1,6 +1,8 @@
 #ifndef BEHAVIOURSCRIPT_H_
 #define BEHAVIOURSCRIPT_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Events.hpp"
 
@@ -10,7 +12,7 @@
 
 namespace spic {
 
-    class BehaviourScript : public Component {
+    class DLL_EXPORT BehaviourScript : public Component {
         public:
 
             BehaviourScript();

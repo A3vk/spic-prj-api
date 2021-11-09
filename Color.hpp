@@ -1,6 +1,8 @@
 #ifndef COLOR_H_
 #define COLOR_H_
 
+#include "Export.hpp"
+
 #if __has_include("Color_extra_includes.hpp")
     #include "Color_extra_includes.hpp"
 #endif
@@ -10,7 +12,7 @@ namespace spic {
     /**
      * @brief Color represents a red-green-blue color with alpha.
      */
-    class Color {
+    class DLL_EXPORT Color {
         public:
             /**
              * @brief Constructor, accepting an rgb value and an alpha (transparency).

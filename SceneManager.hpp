@@ -1,6 +1,8 @@
 #ifndef SCENEMANAGER_H_
 #define SCENEMANAGER_H_
 
+#include "Export.hpp"
+
 #include <memory>
 #include "Scene.hpp"
 #include <string>
@@ -10,7 +12,7 @@
 #endif
 
 namespace spic {
-	class SceneManager {
+	class DLL_EXPORT SceneManager {
 	public:
 		static std::shared_ptr<Scene> CreateScene();
 		static void LoadScene(const std::string& name);

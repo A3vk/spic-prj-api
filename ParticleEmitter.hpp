@@ -1,6 +1,8 @@
 #ifndef PARTICLEEMITTER_H_
 #define PARTICLEEMITTER_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Particle.hpp"
 
@@ -9,7 +11,7 @@
 #endif
 
 namespace spic {
-	class ParticleEmitter : public Component {
+	class DLL_EXPORT ParticleEmitter : public Component {
 	public:
 		ParticleEmitter(Particle particle);
 		void Play();

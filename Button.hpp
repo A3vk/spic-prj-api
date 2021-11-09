@@ -1,6 +1,8 @@
 #ifndef BUTTON_H_
 #define BUTTON_H_
 
+#include "Export.hpp"
+
 #include "UIObject.hpp"
 #include <functional>
 
@@ -13,7 +15,7 @@ namespace spic {
     /**
      * @brief Instances of this class are clickable user interface items.
      */
-    class Button : public UIObject {
+    class DLL_EXPORT Button : public UIObject {
         public:
 
             Button(float width, float height, const std::string& name, bool interactable = true) : UIObject(width, height, name);

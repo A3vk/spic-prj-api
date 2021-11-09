@@ -1,6 +1,8 @@
 #ifndef SPRITESHEET_H_
 #define SPRITESHEET_H_
 
+#include "Export.hpp"
+
 #include <vector>
 #include <memory>
 #include "Vector2.hpp"
@@ -10,7 +12,7 @@
 #endif
 
 namespace spic {
-	class SpriteSheet {
+	class DLL_EXPORT SpriteSheet {
 	public:
 		SpriteSheet(Vector2<int> frameSize, const std::string& url, int spriteCount);
 		const Sprite& operator[](int i);

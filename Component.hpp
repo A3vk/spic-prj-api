@@ -1,6 +1,8 @@
 #ifndef COMPONENT_H_
 #define COMPONENT_H_
 
+#include "Export.hpp"
+
 #if __has_include("Component_extra_includes.hpp")
     #include "Component_extra_includes.hpp"
 #endif
@@ -10,7 +12,7 @@ namespace spic {
     /**
      * @brief Base class for all components.
      */
-    class Component {
+    class DLL_EXPORT Component {
         public:
 
             Component();
