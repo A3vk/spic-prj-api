@@ -1,7 +1,7 @@
 #ifndef COLOR_H_
 #define COLOR_H_
 
-#include "Color_extra_includes.hpp"
+#include "api/Color_extra_includes.hpp"
 
 namespace spic {
 
@@ -69,7 +69,7 @@ namespace spic {
             // ... more standard colors here
 
         private:
-        #include "Color_private.hpp"
+        #include "api/Color_private.hpp"
     };
 
 }

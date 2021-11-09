@@ -11,22 +11,23 @@ namespace spic {
 	namespace Events {
 		struct Event {
 			bool Handled;
-			virtual EventType GetEventType();
+			spic::Event::EventType eventType;
 		};
 
 		struct MouseEvent : public Event {
-			spic::Vector2 Position;
-			spic::MouseButton Button;
+			spic::Vector2<> Position;
+			spic::Input::MouseButton Button;
 			bool IsPressed;
 		};
 
 		struct CollisionEvent : public Event {
+//            CollisionEvent(spic::Collider& self, spic::Collider& other) : Collider(self), OtherCollider(other) { }
 			spic::Collider& Collider;
 			spic::Collider& OtherCollider;
 		};
 
 		struct KeyEvent : public Event {
-			spic::KeyCode Key;
+			spic::Input::KeyCode Key;
 			bool IsPressed;
 		};
 	}

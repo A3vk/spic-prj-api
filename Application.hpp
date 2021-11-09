@@ -1,7 +1,7 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
-#include "Application_extra_includes.hpp"
+#include "api/Application_extra_includes.hpp"
 #include "CrossCompile.h"
 
 namespace spic
@@ -16,8 +16,8 @@ namespace spic
 		virtual void OnUpdate();
 
 	protected:
-	#include "Application_protected.hpp"
-	};
+	#include "api/Application_protected.hpp"
+    };
 
 	Application* CreateApplication();
 }
