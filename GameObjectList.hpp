@@ -6,7 +6,10 @@
 #include <string>
 #include "Camera.hpp"
 #include "GameObject.hpp"
-#include "GameObjectList_extra_includes.hpp"
+
+#if __has_include("GameObjectList_extra_includes.hpp")
+	#include "GameObjectList_extra_includes.hpp"
+#endif
 
 namespace spic {
 	class GameObjectList {

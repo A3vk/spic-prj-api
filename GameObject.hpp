@@ -2,10 +2,15 @@
 #define GAMEOBJECT_H_
 
 #include "Component.hpp"
+#include "Vector2.hpp"
 #include <string>
 #include <vector>
 #include <memory>
 #include "GameObject_extra_includes.hpp"
+
+#if __has_include("GameObject_extra_includes.hpp")
+    #include "GameObject_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -73,10 +78,7 @@ namespace spic {
              */
             GameObject(const std::string& name);
 
-            /**
-             * @brief Does the object exist? TODO wat wordt hiermee bedoeld?
-             */
-            operator bool();
+            virtual ~GameObject();
 
             /**
              * @brief Compare two GameObjects.
@@ -102,6 +104,9 @@ namespace spic {
              */
             template<class T>
             void AddComponent(std::shared_ptr<Component> component);
+
+            template<class T>
+            void RemoveComponent(std::shared_ptr<Component> component);
 
             /**
              * @brief Get the first component of the specified type. Must be
@@ -174,6 +179,30 @@ namespace spic {
              *        false otherwise.
              */
             bool IsActiveInWorld() const;
+
+            void Move(const Vector2<float>&, double rot = 0);
+
+            const Transform& GetAbsolutePosition();
+            const Transform& GetRelativePosition();
+
+            const std::string& GetName() const;
+
+            const std::string& GetTag() const;
+            void SetTag(const std::string& tag);
+
+            const int GetLayer() const;
+            void SetLayer(int layer);
+
+        protected:
+            std::string name;
+            std::string tag;
+            bool active;
+            int layer;
+            spic::Transform transform;
+            std::vector<std::shared_ptr<Component>> components;
+            std::shared_ptr<GameObject> parent;
+            std::vector<std::shared_ptr<GameObject>> children;
+        #include "GameObject_protected.hpp"
 
         private:
         #include "GameObject_private.hpp"

@@ -2,7 +2,10 @@
 #define BOXCOLLIDER_H_
 
 #include "Collider.hpp"
-#include "BoxCollider_extra_includes.hpp"
+
+#if __has_include("BoxCollider_extra_includes.hpp")
+    #include "BoxCollider_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -17,7 +20,7 @@ namespace spic {
              * @brief The collider's width
              * @return The current width
              */
-            float GetWidth();
+            float GetWidth() const;
 
             /**
              * @brief The collider's width
@@ -29,7 +32,7 @@ namespace spic {
              * @brief The collider's height
              * @return The current height
              */
-            float GetHeight();
+            float GetHeight() const;
 
             /**
              * @brief The collider's height

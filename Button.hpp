@@ -3,7 +3,10 @@
 
 #include "UIObject.hpp"
 #include <functional>
-#include "Button_extra_includes.hpp"
+
+#if __has_include("Button_extra_includes.hpp")
+    #include "Button_extra_includes.hpp"
+#endif
 
 namespace spic {
 

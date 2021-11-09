@@ -3,7 +3,10 @@
 
 #include <vector>
 #include "Collider.hpp"
-#include "PolygonCollider_extra_includes.hpp"
+
+#if __has_include("PolygonCollider_extra_includes.hpp")
+	#include "PolygonCollider_extra_includes.hpp"
+#endif
 
 namespace spic {
 	class PolygonCollider : public Collider {

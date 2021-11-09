@@ -3,7 +3,10 @@
 
 #include "Component.hpp"
 #include <string>
-#include "AudioSource_extra_includes.hpp"
+
+#if __has_include("AudioSource_extra_includes.hpp")
+    #include "AudioSource_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -39,13 +42,13 @@ namespace spic {
 
             void SetPlayOnAwake(bool flag);
 
-            bool GetPlayOnAwake();
+            bool GetPlayOnAwake() const;
 
             void SetVolume(double newVolume);
 
-            double GetVolume();
+            double GetVolume() const;
 
-            std::string GetUrl();
+            std::string GetUrl() const;
 
         private:
             #include "AudioSource_private.hpp"

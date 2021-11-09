@@ -4,7 +4,10 @@
 #include "Component.hpp"
 #include "Sprite.hpp"
 #include "SpriteSheet.hpp"
-#include "Animator_extra_includes.hpp"
+
+#if __has_include("Animator_extra_includes.hpp")
+    #include "Animator_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -27,7 +30,7 @@ namespace spic {
              */
             void Stop();
 
-            int GetFps();
+            int GetFps() const;
 
             void SetFps(int newFps);
 

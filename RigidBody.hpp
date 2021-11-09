@@ -3,7 +3,10 @@
 
 #include "Component.hpp"
 #include "Vector2.hpp"
-#include "RigidBody_extra_includes.hpp"
+
+#if __has_include("RigidBody_extra_includes.hpp")
+    #include "RigidBody_extra_includes.hpp"
+#endif
 
 namespace spic {
 

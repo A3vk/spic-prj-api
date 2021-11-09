@@ -4,7 +4,10 @@
 #include "Component.hpp"
 #include "Color.hpp"
 #include <string>
-#include "Sprite_extra_includes.hpp"
+
+#if __has_include("Sprite_extra_includes.hpp")
+    #include "Sprite_extra_includes.hpp"
+#endif
 
 namespace spic {
 

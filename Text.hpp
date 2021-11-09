@@ -4,7 +4,10 @@
 #include "UIObject.hpp"
 #include "Color.hpp"
 #include <string>
-#include "Text_extra_includes.hpp"
+
+#if __has_include("Text_extra_includes.hpp")
+    #include "Text_extra_includes.hpp"
+#endif
 
 namespace spic {
 

@@ -3,7 +3,10 @@
 
 #include "Color.hpp"
 #include "Vector2.hpp"
-#include "Particle_extra_includes.hpp"
+
+#if __has_include("Particle_extra_includes.hpp")
+	#include "Particle_extra_includes.hpp"
+#endif
 
 namespace spic {
 	struct Particle {

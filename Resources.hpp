@@ -3,7 +3,10 @@
 
 #include "GameObject.hpp"
 #include <memory>
-#include "Resources_extra_includes.hpp"
+
+#if __has_include("Resources_extra_includes.hpp")
+	#include "Resources_extra_includes.hpp"
+#endif
 
 namespace spic {
 	class Resources {

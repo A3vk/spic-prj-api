@@ -4,7 +4,10 @@
 #include <vector>
 #include "Collider.hpp"
 #include "Vector2.hpp"
-#include "CircleCollider_extra_includes.hpp"
+
+#if __has_include("CircleCollider_extra_includes.hpp")
+    #include "CircleCollider_extra_includes.hpp"
+#endif
 
 namespace spic {
 

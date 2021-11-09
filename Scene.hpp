@@ -2,7 +2,10 @@
 #define SCENE_H_
 
 #include "GameObject.hpp"
-#include "Scene_extra_includes.hpp"
+
+#if __has_include("Scene_extra_includes.hpp")
+    #include "Scene_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -13,6 +16,7 @@ namespace spic {
         public:
 
             Scene();
+            virtual ~Scene();
             /**
              * @brief This method is called by a Camera to render the scene on the engine.
              */

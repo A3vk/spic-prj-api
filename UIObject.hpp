@@ -2,7 +2,10 @@
 #define UIOBJECT_H_
 
 #include "GameObject.hpp"
-#include "UIObject_extra_includes.hpp"
+
+#if __has_include("UIObject_extra_includes.hpp")
+    #include "UIObject_extra_includes.hpp"
+#endif
 
 namespace spic {
 

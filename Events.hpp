@@ -5,13 +5,16 @@
 #include "Vector2.hpp"
 #include "Input.hpp"
 #include "Collider.hpp"
-#include "Events_extra_includes.hpp"
+
+#if __has_include("Events_extra_includes.hpp")
+	#include "Events_extra_includes.hpp"
+#endif
 
 namespace spic {
 	namespace Events {
 		struct Event {
 			bool Handled;
-			virtual EventType GetEventType();
+			EventType EventType;
 		};
 
 		struct MouseEvent : public Event {

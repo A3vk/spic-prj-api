@@ -1,7 +1,9 @@
 #ifndef COMPONENT_H_
 #define COMPONENT_H_
 
-#include "Component_extra_includes.hpp"
+#if __has_include("Component_extra_includes.hpp")
+    #include "Component_extra_includes.hpp"
+#endif
 
 namespace spic {
 
@@ -12,6 +14,8 @@ namespace spic {
         public:
 
             Component();
+            virtual ~Component();
+
             /**
              * @brief Getter for active status.
              * @return true if active, false otherwise.

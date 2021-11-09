@@ -2,7 +2,7 @@
 #define EVENTTYPE_H_
 
 namespace spic {
-	namespace Event {
+	namespace Events {
 		enum EventType {
 			None,
 			WindowClose,
