@@ -1,16 +1,21 @@
 #ifndef RIGIDBODY_H_
 #define RIGIDBODY_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Vector2.hpp"
-#include "RigidBody_extra_includes.hpp"
+
+#if __has_include("RigidBody_extra_includes.hpp")
+    #include "RigidBody_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Enumeration for different rigid body types
      */
-    enum class BodyType {
+    enum DLL_EXPORT class BodyType {
         staticBody,
         kinematicBody,
         dynamicBody
@@ -19,7 +24,7 @@ namespace spic {
     /**
      * @brief A component representing a rigid body.
      */
-    class RigidBody : public Component {
+    class DLL_EXPORT RigidBody : public Component {
         public:
 
             RigidBody(float mass, float gravityScale, BodyType bodyType);
@@ -43,7 +48,9 @@ namespace spic {
             void SetBodyType(BodyType newBodyType);
 
         private:
-        #include "RigidBody_private.hpp"
+        #if __has_include("RigidBody_private.hpp")
+            #include "RigidBody_private.hpp"
+        #endif
     };
 
 }

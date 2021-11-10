@@ -1,16 +1,21 @@
 #ifndef INPUT_H_
 #define INPUT_H_
 
+#include "Export.hpp"
+
 #include "Vector2.hpp"
 #include <string>
-#include "Input_extra_includes.hpp"
+
+#if __has_include("Input_extra_includes.hpp")
+    #include "Input_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Some convenient input functions.
      */
-    namespace Input {
+    namespace DLL_EXPORT Input {
 
         /**
          * @brief An enumeration describing the different keyboard keycodes.

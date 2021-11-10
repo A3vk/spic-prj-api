@@ -1,16 +1,21 @@
 #ifndef BUTTON_H_
 #define BUTTON_H_
 
+#include "Export.hpp"
+
 #include "UIObject.hpp"
 #include <functional>
-#include "Button_extra_includes.hpp"
+
+#if __has_include("Button_extra_includes.hpp")
+    #include "Button_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Instances of this class are clickable user interface items.
      */
-    class Button : public UIObject {
+    class DLL_EXPORT Button : public UIObject {
         public:
 
             Button(float width, float height, const std::string& name, bool interactable = true) : UIObject(width, height, name);
@@ -32,7 +37,9 @@ namespace spic {
             void SetInteractable(bool interactable);
 
         private:
-        #include "Button_private.hpp"
+        #if __has_include("Button_private.hpp")
+            #include "Button_private.hpp"
+        #endif
     };
 
 }

@@ -1,7 +1,9 @@
 #ifndef TIME_H_
 #define TIME_H_
 
-#include "Time_extra_includes.hpp"
+#if __has_include("Time_extra_includes.hpp")
+    #include "Time_extra_includes.hpp"
+#endif
 
 namespace spic {
 

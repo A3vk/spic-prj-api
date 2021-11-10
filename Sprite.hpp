@@ -1,17 +1,22 @@
 #ifndef SPRITERENDERER_H_
 #define SPRITERENDERER_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Color.hpp"
 #include <string>
-#include "Sprite_extra_includes.hpp"
+
+#if __has_include("Sprite_extra_includes.hpp")
+    #include "Sprite_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief A component representing a sprite (small image)
      */
-    class Sprite : public Component {
+    class DLL_EXPORT Sprite : public Component {
     public:
         Sprite(const std::string& sprite, Color color, int sortingLayer, int orderInLayer);
 
@@ -33,7 +38,9 @@ namespace spic {
         void SetOrderInLayer(int newOrder);
 
     private:
-    #include "Sprite_private.hpp"
+    #if __has_include("Sprite_private.hpp")
+        #include "Sprite_private.hpp"
+    #endif
     };
 
 }

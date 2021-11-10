@@ -1,13 +1,18 @@
 #ifndef BEHAVIOURSCRIPT_H_
 #define BEHAVIOURSCRIPT_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include "Events.hpp"
-#include "BehaviourScript_extra_includes.hpp"
+
+#if __has_include("BehaviourScript_extra_includes.hpp")
+    #include "BehaviourScript_extra_includes.hpp"
+#endif
 
 namespace spic {
 
-    class BehaviourScript : public Component {
+    class DLL_EXPORT BehaviourScript : public Component {
         public:
 
             BehaviourScript();

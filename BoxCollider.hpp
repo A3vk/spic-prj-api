@@ -1,15 +1,20 @@
 #ifndef BOXCOLLIDER_H_
 #define BOXCOLLIDER_H_
 
+#include "Export.hpp"
+
 #include "Collider.hpp"
-#include "BoxCollider_extra_includes.hpp"
+
+#if __has_include("BoxCollider_extra_includes.hpp")
+    #include "BoxCollider_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief A collider which represents a rectangular collision area.
      */
-    class BoxCollider : public Collider {
+    class DLL_EXPORT BoxCollider : public Collider {
         public:
 
             BoxCollider(float width, float height, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
@@ -17,7 +22,7 @@ namespace spic {
              * @brief The collider's width
              * @return The current width
              */
-            float GetWidth();
+            float GetWidth() const;
 
             /**
              * @brief The collider's width
@@ -29,7 +34,7 @@ namespace spic {
              * @brief The collider's height
              * @return The current height
              */
-            float GetHeight();
+            float GetHeight() const;
 
             /**
              * @brief The collider's height
@@ -38,7 +43,9 @@ namespace spic {
             void SetHeight(float newHeight);
 
         private:
-        #include "BoxCollider_private.hpp"
+        #if __has_include("BoxCollider_private.hpp")
+            #include "BoxCollider_private.hpp"
+        #endif
     };
 }
 

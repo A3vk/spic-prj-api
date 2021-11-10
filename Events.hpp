@@ -1,31 +1,36 @@
 #ifndef EVENT_H_
 #define EVENT_H_
 
+#include "Export.hpp"
+
 #include "EventType.hpp"
 #include "Vector2.hpp"
 #include "Input.hpp"
 #include "Collider.hpp"
-#include "Events_extra_includes.hpp"
+
+#if __has_include("Events_extra_includes.hpp")
+	#include "Events_extra_includes.hpp"
+#endif
 
 namespace spic {
 	namespace Events {
-		struct Event {
+		struct DLL_EXPORT Event {
 			bool Handled;
-			virtual EventType GetEventType();
+			EventType EventType;
 		};
 
-		struct MouseEvent : public Event {
+		struct DLL_EXPORT MouseEvent : public Event {
 			spic::Vector2<float> Position;
 			spic::MouseButton Button;
 			bool IsPressed;
 		};
 
-		struct CollisionEvent : public Event {
+		struct DLL_EXPORT CollisionEvent : public Event {
 			spic::Collider& Collider;
 			spic::Collider& OtherCollider;
 		};
 
-		struct KeyEvent : public Event {
+		struct DLL_EXPORT KeyEvent : public Event {
 			spic::KeyCode Key;
 			bool IsPressed;
 		};

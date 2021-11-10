@@ -1,17 +1,22 @@
 #ifndef TEXT_H_
 #define TEXT_H_
 
+#include "Export.hpp"
+
 #include "UIObject.hpp"
 #include "Color.hpp"
 #include <string>
-#include "Text_extra_includes.hpp"
+
+#if __has_include("Text_extra_includes.hpp")
+    #include "Text_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Enumeration for different text alignments.
      */
-    enum class Alignment {
+    enum class DLL_EXPORT Alignment {
         left,
         center,
         right
@@ -20,7 +25,7 @@ namespace spic {
     /**
      * @brief Class representing a piece of text which can be rendered.
      */
-    class Text : public UIObject {
+    class DLL_EXPORT Text : public UIObject {
     public:
         Text(const std::string& text, const std::string& font, int size, Alignment alignment, Color color, float width, float height, const std::string& name) : UIObject(width, height, name);
         
@@ -40,7 +45,9 @@ namespace spic {
         void SetColor(Color newColor);
 
     private:
-    #include "Text_private.hpp"
+    #if __has_include("Text_private.hpp")
+        #include "Text_private.hpp"
+    #endif
     };
 
 }

@@ -1,18 +1,25 @@
 #ifndef GAMEOBJECT_H_
 #define GAMEOBJECT_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
+#include "Vector2.hpp"
+#include "Transform.hpp"
 #include <string>
 #include <vector>
 #include <memory>
-#include "GameObject_extra_includes.hpp"
+
+#if __has_include("GameObject_extra_includes.hpp")
+    #include "GameObject_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Any object which should be represented on screen.
      */
-    class GameObject {
+    class DLL_EXPORT GameObject {
         public:
             /**
              * @brief Finds a GameObject by name and returns it.
@@ -73,10 +80,7 @@ namespace spic {
              */
             GameObject(const std::string& name);
 
-            /**
-             * @brief Does the object exist? TODO wat wordt hiermee bedoeld?
-             */
-            operator bool();
+            virtual ~GameObject();
 
             /**
              * @brief Compare two GameObjects.
@@ -102,6 +106,8 @@ namespace spic {
              */
             template<class T>
             void AddComponent(std::shared_ptr<Component> component);
+
+            void RemoveComponent(std::shared_ptr<Component> component);
 
             /**
              * @brief Get the first component of the specified type. Must be
@@ -175,10 +181,41 @@ namespace spic {
              */
             bool IsActiveInWorld() const;
 
+            void Move(const Vector2<float>&, double rot = 0);
+
+            const Transform& GetAbsolutePosition();
+            const Transform& GetRelativePosition();
+
+            const std::string& GetName() const;
+
+            const std::string& GetTag() const;
+            void SetTag(const std::string& tag);
+
+            const int GetLayer() const;
+            void SetLayer(int layer);
+
+        protected:
+            std::string name;
+            std::string tag;
+            bool active;
+            int layer;
+            spic::Transform transform;
+            std::vector<std::shared_ptr<Component>> components;
+            std::shared_ptr<GameObject> parent;
+            std::vector<std::shared_ptr<GameObject>> children;
+
+        #if __has_include("GameObject_protected.hpp")
+            #include "GameObject_protected.hpp"
+        #endif
+
         private:
-        #include "GameObject_private.hpp"
+        #if __has_include("GameObject_private.hpp")
+            #include "GameObject_private.hpp"
+        #endif
     };
-    #include "GameObject_templates.hpp"
+    #if __has_include("GameObject_templates.hpp")
+        #include "GameObject_templates.hpp"
+    #endif
 }
 
 #endif // GAMEOBJECT_H_

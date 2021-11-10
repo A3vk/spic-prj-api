@@ -1,13 +1,18 @@
 #ifndef SCENEMANAGER_H_
 #define SCENEMANAGER_H_
 
+#include "Export.hpp"
+
 #include <memory>
 #include "Scene.hpp"
 #include <string>
-#include "SceneManager_extra_includes.hpp"
+
+#if __has_include("SceneManager_extra_includes.hpp")
+	#include "SceneManager_extra_includes.hpp"
+#endif
 
 namespace spic {
-	class SceneManager {
+	class DLL_EXPORT SceneManager {
 	public:
 		static std::shared_ptr<Scene> CreateScene();
 		static void LoadScene(const std::string& name);
@@ -17,7 +22,9 @@ namespace spic {
 		static void MoveGameObject(std::shared_ptr<GameObject> object, std::shared_ptr<Scene> scene);
 		static void RemoveGameObject(std::shared_ptr<GameObject> object);
 	private:
-	#include "SceneManager_private.hpp"
+	#if __has_include("SceneManager_private.hpp")
+		#include "SceneManager_private.hpp"
+	#endif
 	};
 }
 

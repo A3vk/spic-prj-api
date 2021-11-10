@@ -1,16 +1,21 @@
 #ifndef AUDIOSOURCE_H_
 #define AUDIOSOURCE_H_
 
+#include "Export.hpp"
+
 #include "Component.hpp"
 #include <string>
-#include "AudioSource_extra_includes.hpp"
+
+#if __has_include("AudioSource_extra_includes.hpp")
+    #include "AudioSource_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Component which can play audio.
      */
-    class AudioSource : public Component {
+    class DLL_EXPORT AudioSource : public Component {
         public:
 
             AudioSource(const std::string& url, bool playOnAwake, double volume);
@@ -39,16 +44,18 @@ namespace spic {
 
             void SetPlayOnAwake(bool flag);
 
-            bool GetPlayOnAwake();
+            bool GetPlayOnAwake() const;
 
             void SetVolume(double newVolume);
 
-            double GetVolume();
+            double GetVolume() const;
 
-            std::string GetUrl();
+            std::string GetUrl() const;
 
         private:
+        #if __has_include("AudioSource_private.hpp")
             #include "AudioSource_private.hpp"
+        #endif
     };
 }
 

@@ -1,17 +1,22 @@
 #ifndef CIRCLECOLLIDER_H_
 #define CIRCLECOLLIDER_H_
 
+#include "Export.hpp"
+
 #include <vector>
 #include "Collider.hpp"
 #include "Vector2.hpp"
-#include "CircleCollider_extra_includes.hpp"
+
+#if __has_include("CircleCollider_extra_includes.hpp")
+    #include "CircleCollider_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief A collider which represents a circular collision area.
      */
-    class CircleCollider : public Collider {
+    class DLL_EXPORT CircleCollider : public Collider {
         public:
 
             CircleCollider(float radius, std::vector<int> collideLayers, Vector2<float> offset) : Collider(collideLayers, offset);
@@ -28,7 +33,9 @@ namespace spic {
             void Radius(float newRadius);
 
         private:
-        #include "CircleCollider_private.hpp"
+        #if __has_include("CircleCollider_private.hpp")
+            #include "CircleCollider_private.hpp"
+        #endif
     };
 
 }

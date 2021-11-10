@@ -1,18 +1,24 @@
 #ifndef SCENE_H_
 #define SCENE_H_
 
+#include "Export.hpp"
+
 #include "GameObject.hpp"
-#include "Scene_extra_includes.hpp"
+
+#if __has_include("Scene_extra_includes.hpp")
+    #include "Scene_extra_includes.hpp"
+#endif
 
 namespace spic {
 
     /**
      * @brief Class representing a scene which can be rendered by the Camera.
      */
-    class Scene {
+    class DLL_EXPORT Scene {
         public:
 
             Scene();
+            virtual ~Scene();
             /**
              * @brief This method is called by a Camera to render the scene on the engine.
              */
@@ -49,10 +55,14 @@ namespace spic {
             
 
         private:
-        #include "Scene_private.hpp"
+        #if __has_include("Scene_private.hpp")
+            #include "Scene_private.hpp"
+        #endif
 
         protected:
-        #include "Scene_protected.hpp"
+        #if __has_include("Scene_protected.hpp")
+            #include "Scene_protected.hpp"
+        #endif
     };
 
 }

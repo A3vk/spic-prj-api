@@ -4,7 +4,10 @@
 #include "Vector2.hpp"
 #include "Color.hpp"
 #include <string>
-#include "Debug_extra_includes.hpp"
+
+#if __has_include("Debug_extra_includes.hpp")
+    #include "Debug_extra_includes.hpp"
+#endif
 
 namespace spic {
 
