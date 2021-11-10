@@ -15,7 +15,6 @@ var searchData=
   ['onstart_68',['OnStart',['../classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77',1,'spic::BehaviourScript']]],
   ['onunload_69',['OnUnload',['../classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5',1,'spic::Scene']]],
   ['onupdate_70',['OnUpdate',['../classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972',1,'spic::BehaviourScript']]],
-  ['operator_20bool_71',['operator bool',['../classspic_1_1GameObject.html#acfc329cbe9bb15a94df487c791657417',1,'spic::GameObject']]],
-  ['operator_21_3d_72',['operator!=',['../classspic_1_1GameObject.html#a3668d7da44d0da41a6de2cb51b227adc',1,'spic::GameObject']]],
-  ['operator_3d_3d_73',['operator==',['../classspic_1_1GameObject.html#a2d750ec0c520d97aa9618e0f7940ef02',1,'spic::GameObject']]]
+  ['operator_21_3d_71',['operator!=',['../classspic_1_1GameObject.html#a3668d7da44d0da41a6de2cb51b227adc',1,'spic::GameObject']]],
+  ['operator_3d_3d_72',['operator==',['../classspic_1_1GameObject.html#a2d750ec0c520d97aa9618e0f7940ef02',1,'spic::GameObject']]]
 ];

@@ -1,5 +1,7 @@
 <map id="spic::Text" name="spic::Text">
-<area shape="rect" id="node1" title="Class representing a piece of text which can be rendered." alt="" coords="29,157,107,184"/>
-<area shape="rect" id="node2" href="$classspic_1_1UIObject.html" title="Base class for a user interface object like Button or Text." alt="" coords="16,81,120,108"/>
-<area shape="rect" id="node3" href="$classspic_1_1GameObject.html" title="Any object which should be represented on screen." alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node1" title="Class representing a piece of text which can be rendered." alt="" coords="38,336,115,363"/>
+<area shape="rect" id="node2" href="$classspic_1_1UIObject.html" title="Base class for a user interface object like Button or Text." alt="" coords="25,260,129,287"/>
+<area shape="rect" id="node3" href="$classspic_1_1GameObject.html" title="Any object which should be represented on screen." alt="" coords="14,184,139,211"/>
+<area shape="rect" id="node4" href="$classspic_1_1Transform.html" title="Instances of this class represent specific 2D transformations." alt="" coords="21,95,132,121"/>
+<area shape="rect" id="node5" href="$structspic_1_1Vector2.html" title=" " alt="" coords="5,5,148,32"/>
 </map>

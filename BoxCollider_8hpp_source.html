@@ -69,34 +69,41 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BOXCOLLIDER_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BOXCOLLIDER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Collider.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;BoxCollider_extra_includes.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>spic {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1BoxCollider.html">BoxCollider</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Collider.html">Collider</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <a class="code" href="classspic_1_1BoxCollider.html">BoxCollider</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, std::vector&lt;int&gt; collideLayers, <a class="code" href="structspic_1_1Vector2.html">Vector2&lt;float&gt;</a> offset) : <a class="code" href="classspic_1_1Collider.html">Collider</a>(collideLayers, offset);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">float</span> GetWidth();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#ab54816de80d3f9b36e4e3bb263ff07c8">   26</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BoxCollider.html#ab54816de80d3f9b36e4e3bb263ff07c8">SetWidth</a>(<span class="keywordtype">float</span> newWidth);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#a9d0705c8627b37c7e4341bcef4578d0b">   32</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classspic_1_1BoxCollider.html#a9d0705c8627b37c7e4341bcef4578d0b">GetHeight</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#a2c9f3f470f2f65b1e4fab7567f7cb7e0">   38</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BoxCollider.html#a2c9f3f470f2f65b1e4fab7567f7cb7e0">SetHeight</a>(<span class="keywordtype">float</span> newHeight);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        #include &quot;BoxCollider_private.hpp&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Export.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Collider.hpp&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#if __has_include(&quot;BoxCollider_extra_includes.hpp&quot;</span>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #include &quot;BoxCollider_extra_includes.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>spic {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html">   17</a></span>&#160;    <span class="keyword">class </span>DLL_EXPORT <a class="code" href="classspic_1_1BoxCollider.html">BoxCollider</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Collider.html">Collider</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="classspic_1_1BoxCollider.html">BoxCollider</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, std::vector&lt;int&gt; collideLayers, <a class="code" href="structspic_1_1Vector2.html">Vector2&lt;float&gt;</a> offset) : <a class="code" href="classspic_1_1Collider.html">Collider</a>(collideLayers, offset);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">float</span> GetWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#ab54816de80d3f9b36e4e3bb263ff07c8">   31</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BoxCollider.html#ab54816de80d3f9b36e4e3bb263ff07c8">SetWidth</a>(<span class="keywordtype">float</span> newWidth);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#a6523cce338e1ca2b3e5b9cd1341c07f7">   37</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classspic_1_1BoxCollider.html#a6523cce338e1ca2b3e5b9cd1341c07f7">GetHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classspic_1_1BoxCollider.html#a2c9f3f470f2f65b1e4fab7567f7cb7e0">   43</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BoxCollider.html#a2c9f3f470f2f65b1e4fab7567f7cb7e0">SetHeight</a>(<span class="keywordtype">float</span> newHeight);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BOXCOLLIDER_H_</span></div>
-<div class="ttc" id="aclassspic_1_1BoxCollider_html"><div class="ttname"><a href="classspic_1_1BoxCollider.html">spic::BoxCollider</a></div><div class="ttdoc">A collider which represents a rectangular collision area.</div><div class="ttdef"><b>Definition:</b> BoxCollider.hpp:12</div></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        #if __has_include(&quot;BoxCollider_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">            #include &quot;BoxCollider_private.hpp&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BOXCOLLIDER_H_</span></div>
+<div class="ttc" id="aclassspic_1_1BoxCollider_html"><div class="ttname"><a href="classspic_1_1BoxCollider.html">spic::BoxCollider</a></div><div class="ttdoc">A collider which represents a rectangular collision area.</div><div class="ttdef"><b>Definition:</b> BoxCollider.hpp:17</div></div>
 <div class="ttc" id="aclassspic_1_1BoxCollider_html_a2c9f3f470f2f65b1e4fab7567f7cb7e0"><div class="ttname"><a href="classspic_1_1BoxCollider.html#a2c9f3f470f2f65b1e4fab7567f7cb7e0">spic::BoxCollider::SetHeight</a></div><div class="ttdeci">void SetHeight(float newHeight)</div><div class="ttdoc">The collider's height.</div></div>
-<div class="ttc" id="aclassspic_1_1BoxCollider_html_a9d0705c8627b37c7e4341bcef4578d0b"><div class="ttname"><a href="classspic_1_1BoxCollider.html#a9d0705c8627b37c7e4341bcef4578d0b">spic::BoxCollider::GetHeight</a></div><div class="ttdeci">float GetHeight()</div><div class="ttdoc">The collider's height.</div></div>
+<div class="ttc" id="aclassspic_1_1BoxCollider_html_a6523cce338e1ca2b3e5b9cd1341c07f7"><div class="ttname"><a href="classspic_1_1BoxCollider.html#a6523cce338e1ca2b3e5b9cd1341c07f7">spic::BoxCollider::GetHeight</a></div><div class="ttdeci">float GetHeight() const</div><div class="ttdoc">The collider's height.</div></div>
 <div class="ttc" id="aclassspic_1_1BoxCollider_html_ab54816de80d3f9b36e4e3bb263ff07c8"><div class="ttname"><a href="classspic_1_1BoxCollider.html#ab54816de80d3f9b36e4e3bb263ff07c8">spic::BoxCollider::SetWidth</a></div><div class="ttdeci">void SetWidth(float newWidth)</div><div class="ttdoc">The collider's width.</div></div>
-<div class="ttc" id="aclassspic_1_1Collider_html"><div class="ttname"><a href="classspic_1_1Collider.html">spic::Collider</a></div><div class="ttdoc">The base class for all colliders.</div><div class="ttdef"><b>Definition:</b> Collider.hpp:14</div></div>
+<div class="ttc" id="aclassspic_1_1Collider_html"><div class="ttname"><a href="classspic_1_1Collider.html">spic::Collider</a></div><div class="ttdoc">The base class for all colliders.</div><div class="ttdef"><b>Definition:</b> Collider.hpp:19</div></div>
 <div class="ttc" id="astructspic_1_1Vector2_html"><div class="ttname"><a href="structspic_1_1Vector2.html">spic::Vector2&lt; float &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

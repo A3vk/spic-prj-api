@@ -8,7 +8,7 @@ var searchData=
   ['getcomponents_34',['GetComponents',['../classspic_1_1GameObject.html#ad33e2fb7c70285ae3a2fd5f770c2211a',1,'spic::GameObject']]],
   ['getcomponentsinchildren_35',['GetComponentsInChildren',['../classspic_1_1GameObject.html#a27db56ffca33179d3b4ab64fc98f7d6b',1,'spic::GameObject']]],
   ['getcomponentsinparent_36',['GetComponentsInParent',['../classspic_1_1GameObject.html#a6b7b8651352033d63b88a2bbdced949a',1,'spic::GameObject']]],
-  ['getheight_37',['GetHeight',['../classspic_1_1BoxCollider.html#a9d0705c8627b37c7e4341bcef4578d0b',1,'spic::BoxCollider']]],
+  ['getheight_37',['GetHeight',['../classspic_1_1BoxCollider.html#a6523cce338e1ca2b3e5b9cd1341c07f7',1,'spic::BoxCollider']]],
   ['getkey_38',['GetKey',['../namespacespic_1_1Input.html#a74d741763d8164054a107a6ed176eccc',1,'spic::Input']]],
   ['getkeydown_39',['GetKeyDown',['../namespacespic_1_1Input.html#aadd82ea5687e57dbab195ac815c9fdb4',1,'spic::Input']]],
   ['getkeyup_40',['GetKeyUp',['../namespacespic_1_1Input.html#a3ce052473979d8d5776478f29420066c',1,'spic::Input']]],

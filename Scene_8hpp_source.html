@@ -69,37 +69,47 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENE_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCENE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;GameObject.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Scene_extra_includes.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>spic {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1Scene.html">Scene</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <a class="code" href="classspic_1_1Scene.html">Scene</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">   19</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">RenderScene</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a7242e62f035093338fd133a68240f500">   24</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a7242e62f035093338fd133a68240f500">OnCreate</a>() = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#acdcd9917035e661adacb4ee645843d5e">   28</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#acdcd9917035e661adacb4ee645843d5e">OnDestroy</a>() = 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a777429b7fe37e15277a2005495813a16">   32</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a777429b7fe37e15277a2005495813a16">OnLoad</a>() = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5">   36</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5">OnUnload</a>() = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">   40</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">OnActivate</a>() = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">   44</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">OnDeactivate</a>() = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">   48</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">Update</a>() = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        #include &quot;Scene_private.hpp&quot;</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        #include &quot;Scene_protected.hpp&quot;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCENE_H_</span></div>
-<div class="ttc" id="aclassspic_1_1Scene_html"><div class="ttname"><a href="classspic_1_1Scene.html">spic::Scene</a></div><div class="ttdoc">Class representing a scene which can be rendered by the Camera.</div><div class="ttdef"><b>Definition:</b> Scene.hpp:12</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Export.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;GameObject.hpp&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#if __has_include(&quot;Scene_extra_includes.hpp&quot;</span>)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #include &quot;Scene_extra_includes.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>spic {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html">   17</a></span>&#160;    <span class="keyword">class </span>DLL_EXPORT <a class="code" href="classspic_1_1Scene.html">Scene</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="classspic_1_1Scene.html">Scene</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keyword">virtual</span> ~<a class="code" href="classspic_1_1Scene.html">Scene</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">   25</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">RenderScene</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a7242e62f035093338fd133a68240f500">   30</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a7242e62f035093338fd133a68240f500">OnCreate</a>() = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#acdcd9917035e661adacb4ee645843d5e">   34</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#acdcd9917035e661adacb4ee645843d5e">OnDestroy</a>() = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a777429b7fe37e15277a2005495813a16">   38</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a777429b7fe37e15277a2005495813a16">OnLoad</a>() = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5">   42</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#ab7f7368daba318770ff930103bd1ede5">OnUnload</a>() = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">   46</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">OnActivate</a>() = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">   50</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">OnDeactivate</a>() = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">   54</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">Update</a>() = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">        #if __has_include(&quot;Scene_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">            #include &quot;Scene_private.hpp&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">        #if __has_include(&quot;Scene_protected.hpp&quot;</span>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">            #include &quot;Scene_protected.hpp&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCENE_H_</span></div>
+<div class="ttc" id="aclassspic_1_1Scene_html"><div class="ttname"><a href="classspic_1_1Scene.html">spic::Scene</a></div><div class="ttdoc">Class representing a scene which can be rendered by the Camera.</div><div class="ttdef"><b>Definition:</b> Scene.hpp:17</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_a10c4c3f92e4f312a57e725cc139b5d91"><div class="ttname"><a href="classspic_1_1Scene.html#a10c4c3f92e4f312a57e725cc139b5d91">spic::Scene::OnDeactivate</a></div><div class="ttdeci">virtual void OnDeactivate()=0</div><div class="ttdoc">This method is called when deactivating the scene, should be overridden.</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_a2bb3466facfce2aa904f1a36dbe31716"><div class="ttname"><a href="classspic_1_1Scene.html#a2bb3466facfce2aa904f1a36dbe31716">spic::Scene::OnActivate</a></div><div class="ttdeci">virtual void OnActivate()=0</div><div class="ttdoc">This method is called when activating the scene, should be overridden.</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_a5fdb184b7af6d9f63d6b3bb7e6ddb7ae"><div class="ttname"><a href="classspic_1_1Scene.html#a5fdb184b7af6d9f63d6b3bb7e6ddb7ae">spic::Scene::Update</a></div><div class="ttdeci">virtual void Update()=0</div><div class="ttdoc">This method is called when the scene needs to be updated.</div></div>
